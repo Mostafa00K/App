@@ -1,0 +1,21 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+  }
+  .center-container ,.custom-button {
+    background-color: navy; /* Custom background color */
+    color: #ffffff; /* Custom text color */
+  }
+  h4{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  input{
+    font-size: 12px;
+  }
+  label{
+    font-size: 12px;
+  }
+  button{
+    font-size: 13px;
+  }

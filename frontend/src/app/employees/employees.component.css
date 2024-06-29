@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+  }
+  th,td{
+    font-size: 10px;
+  }
+  .center-container {
+    display: flex;
+    justify-content: center;
+  }
+  .center-container ,.custom-button {
+    background-color: navy; /* Custom background color */
+    color: #ffffff; /* Custom text color */
+  }
+  a{
+    cursor: pointer;
+    color: navy;
+    font-weight: bold;
+  }
+  
+  
+  

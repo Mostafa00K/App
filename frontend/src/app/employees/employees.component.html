@@ -1,0 +1,59 @@
+<div class="center-container">
+    <button mat-raised-button class="custom-button">RH Space</button>
+</div>
+  <mat-card>
+    <mat-card-header>
+    </mat-card-header>
+    <mat-card-content>
+        <table mat-table [dataSource]="contacts" class="mat-elevation-z8">
+            <ng-container matColumnDef="id_employee">
+              <th mat-header-cell *matHeaderCellDef> Matricule </th>
+              <td mat-cell *matCellDef="let element"> {{element.id_employee}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="nom_complet">
+              <th mat-header-cell *matHeaderCellDef> Nom </th>
+              <td mat-cell *matCellDef="let element"> {{element.nom_complet}} </td>
+            </ng-container>
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="date_embauche">
+              <th mat-header-cell *matHeaderCellDef> Date embauche </th>
+              <td mat-cell *matCellDef="let element"> {{element.date_embauche}} </td>
+            </ng-container>
+          
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="date_naissance">
+              <th mat-header-cell *matHeaderCellDef> Date naissance </th>
+              <td mat-cell *matCellDef="let element"> {{element.date_naissance}} </td>
+            </ng-container>
+            <ng-container matColumnDef="adress">
+                <th mat-header-cell *matHeaderCellDef> Adress</th>
+                <td mat-cell *matCellDef="let element"> {{element.adress}} </td>
+              </ng-container>
+              <ng-container matColumnDef="compte_bancaire">
+                <th mat-header-cell *matHeaderCellDef> Compte Bancaire</th>
+                <td mat-cell *matCellDef="let element"> {{element.compte_bancaire}} </td>
+              </ng-container>
+              <ng-container matColumnDef="email">
+                <th mat-header-cell *matHeaderCellDef> email</th>
+                <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+              </ng-container>
+              <ng-container matColumnDef="id_post">
+                <th mat-header-cell *matHeaderCellDef> Post Id</th>
+                <td mat-cell *matCellDef="let element"> {{element.id_post}} </td>
+              </ng-container>
+              <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef> actions</th>
+                <td mat-cell *matCellDef="let element">
+                    <a mat-stroked-button  (click)="add(element.id_employee,element.id_post)"> + Payment File</a>
+                </td>
+              </ng-container>
+              
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </mat-card-content>
+  </mat-card>
+  

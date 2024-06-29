@@ -1,0 +1,33 @@
+<div class="center-container">
+    <button mat-raised-button class="custom-button">RH Space</button>
+</div>
+<div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Payment File
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="id_employee" [(ngModel)]="employee.id_employee" [ngModelOptions]="{ standalone: true }" placeholder="Your Matricule">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="id_post" [(ngModel)]="employee.id_post" [ngModelOptions]="{ standalone: true }" placeholder="Your Post ID">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="mois" [(ngModel)]="file.mois" [ngModelOptions]="{ standalone: true }" placeholder="month">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="annee" [(ngModel)]="file.year" [ngModelOptions]="{ standalone: true }" placeholder="year">
+              </div>
+
+              <button type="submit" class="btn btn-success" (click)="submit()">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
